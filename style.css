@@ -39,6 +39,13 @@ nav ul li{
     height: 130px;
     background-color: black;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
 
 
 }
