@@ -73,3 +73,4 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         masterPlay.classList.add('fa-pause-circle');
     })
 })
+document.getElementById
