@@ -63,10 +63,13 @@ const makeAllPlay = ()=>{
 Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
     element.addEventListener('click',(e)=>{
         makeAllPlay();
+        index = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        audioElement.src = 'songs/3.mp3';
+        audioElement.src = `songs/${index+1}.mp3`;
         audioElement.currentTime =0;
         audioElement.play();
+        masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
     })
 })
