@@ -9,11 +9,11 @@ let gif = document.getElementById('gif');
 
 let songs = [
     {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/1.jpg"}
+    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/2.jpg"},
+    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/3.jpg"},
+    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/4.jpg"},
+    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/5.jpg"},
+    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/6.jpg"}
 ]
 
 //audioElement.play();
