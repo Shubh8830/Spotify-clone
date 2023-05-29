@@ -6,15 +6,21 @@ let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar =document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
+let songItems = document.getElementsByClassName('songItem');
 
 let songs = [
     {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/2.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/3.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/4.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/5.jpg"},
-    {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/6.jpg"}
+    {songName: "Bhula dena -Salam-e-Ishq", filePath: " songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "Chidiya -Salam-e-Ishq", filePath: " songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "Man-mast-magan-Salam-e-Ishq", filePath: " songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "mai tumhara-Salam-e-Ishq", filePath: " songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "maajhi baay go-Salam-e-Ishq", filePath: " songs/6.mp3", coverPath: "covers/6.jpg"}
 ]
+songItems.forEach((element)=>{
+    console.log(element,i);
+    element.getElementsByTagName("img")[0].src = songs[i].filePath;
+
+})
 
 //audioElement.play();
 //Handle play or paused
