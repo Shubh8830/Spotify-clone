@@ -6,7 +6,7 @@ let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar =document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
-let songItems = document.getElementsByClassName('songItem');
+let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
     {songName: "Salam-e-Ishq", filePath: " songs/1.mp3", coverPath: "covers/1.jpg"},
@@ -16,9 +16,10 @@ let songs = [
     {songName: "mai tumhara-Salam-e-Ishq", filePath: " songs/5.mp3", coverPath: "covers/5.jpg"},
     {songName: "maajhi baay go-Salam-e-Ishq", filePath: " songs/6.mp3", coverPath: "covers/6.jpg"}
 ]
-songItems.forEach((element)=>{
+songItems.forEach((element, i)=>{
     console.log(element,i);
-    element.getElementsByTagName("img")[0].src = songs[i].filePath;
+    element.getElementsByTagName("img")[0].src = songs[i].coverPath;
+    element.getElementsByClassName("span")[0].innerHTML = songs[i].songName;
 
 })
 
