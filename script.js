@@ -14,7 +14,7 @@ let songs = [
     {songName: "Chidiya -Salam-e-Ishq", filePath: " songs/3.mp3", coverPath: "covers/3.jpg"},
     {songName: "Man-mast-magan-Salam-e-Ishq", filePath: " songs/4.mp3", coverPath: "covers/4.jpg"},
     {songName: "mai tumhara-Salam-e-Ishq", filePath: " songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "maajhi baay go-Salam-e-Ishq", filePath: " songs/6.mp3", coverPath: "covers/6.jpg"}
+    {songName: "let me love you - go-Salam-e-Ishq", filePath: " songs/6.mp3", coverPath: "covers/6.jpg"}
 ]
 songItems.forEach((element, i)=>{
     console.log(element,i);
@@ -80,6 +80,7 @@ document.getElementById('next').addEventListener('click',()=>{
     }else{
         songIndex +=1;
     }
+    audioElement.src = `songs/${songIndex+1}.mp3`;
     audioElement.currentTime =0;
         audioElement.play();
         masterPlay.classList.remove('fa-play-circle');
@@ -90,8 +91,9 @@ document.getElementById('previous').addEventListener('click',()=>{
         songIndex = 0;
 
     }else{
-        songIndex +=1;
+        songIndex -=1;
     }
+    audioElement.src = `songs/${songIndex+1}.mp3`;
     audioElement.currentTime =0;
         audioElement.play();
         masterPlay.classList.remove('fa-play-circle');
