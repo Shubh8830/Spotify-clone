@@ -73,4 +73,27 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         masterPlay.classList.add('fa-pause-circle');
     })
 })
-document.getElementById('previous')
+document.getElementById('next').addEventListener('click',()=>{
+    if(songIndex>=6){
+        songIndex = 0;
+
+    }else{
+        songIndex +=1;
+    }
+    audioElement.currentTime =0;
+        audioElement.play();
+        masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
+})
+document.getElementById('previous').addEventListener('click',()=>{
+    if(songIndex<=0){
+        songIndex = 0;
+
+    }else{
+        songIndex +=1;
+    }
+    audioElement.currentTime =0;
+        audioElement.play();
+        masterPlay.classList.remove('fa-play-circle');
+        masterPlay.classList.add('fa-pause-circle');
+})
